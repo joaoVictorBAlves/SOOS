@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+#logo {
+    position: relative;
+    top: 115px;
+    text-align: center;
+}
+
+#login {
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#login input,
+#login a {
+    display: block;
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+}
+
+#login input {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#login #btnLogar {
+    width: 50%;
+    height: 50px;
+    margin-top: 45px;
+}
+
+/* TELA DE CADASTRO */
+
+#titulo-cadastro {
+    text-align: center;
+    margin: 50px;
+}
+
+#cadastro {
+    display: block;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#cadastro input,
+#cadastro a {
+    display: block;
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+}
+
+#cadastro input {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#cadastro #btnCadastrar {
+    width: 50%;
+    height: 50px;
+    margin-top: 45px;
+}
