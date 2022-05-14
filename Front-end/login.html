@@ -11,10 +11,25 @@
     <h1 id="logo">LOGO</h1>
     <div id="circle"></div>
     <form id="login">
-        <input id="matricula" type="text" placeholder="Matrícula">
+        <input id="idAcademico" type="text" placeholder="Matrícula/Siape">
         <input id="senha" type="password" placeholder="Senha">
         <input id="btnLogar" type="button" value="Acessar">
         <a href="cadastro.html">Não tem cadastro?</a>
+        <p id="aviso"></p>
     </form>
+    <script>
+        let aviso = document.getElementById("aviso")
+        let url = window.location.href;
+        let auth = url.split('login.html?auth=');
+        console.log(auth)
+
+        if(auth[1] === "false"){
+          aviso.style.color = "#f04747"
+          aviso.innerText = "Matrícula ou senha incorreta"
+        }
+        
+    </script>
+</body>
+    <script src="autenticacao.js"></script>
 </body>
 </html>

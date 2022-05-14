@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOOS</title>
+    <script>
+        let url = window.location.href
+        console.log(url)
+        url = url.split("Front-end")
+        console.log(url)
+        if(url[1] == "/" || url[1] == '/index.html'){
+           window.location.href = "login.html"
+        }
+       
+        url = url[1].split('index.html?auth=')
+        if (url[1] === "false") {
+            console.log("teste")
+            window.location.href = "login.html?auth=false"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Tela principal</h1>
+</body>
+
+</html>
